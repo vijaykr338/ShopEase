@@ -1,0 +1,111 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@layer base {
+  :root {
+    --background: 110 33% 98%;
+    --foreground: 110 10% 20%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 110 10% 20%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 110 10% 20%;
+
+    --primary: 120 48% 30%;
+    --primary-foreground: 120 10% 98%;
+
+    --secondary: 120 20% 92%;
+    --secondary-foreground: 110 10% 30%;
+
+    --muted: 120 10% 92%;
+    --muted-foreground: 110 5% 40%;
+
+    --accent: 120 30% 92%;
+    --accent-foreground: 110 10% 25%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 120 10% 85%;
+    --input: 120 10% 85%;
+    --ring: 120 48% 30%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 110 15% 15%;
+    --foreground: 110 10% 92%;
+
+    --card: 110 15% 18%;
+    --card-foreground: 110 10% 92%;
+
+    --popover: 110 15% 18%;
+    --popover-foreground: 110 10% 92%;
+
+    --primary: 120 45% 45%;
+    --primary-foreground: 110 10% 15%;
+
+    --secondary: 120 15% 22%;
+    --secondary-foreground: 110 10% 92%;
+
+    --muted: 120 15% 22%;
+    --muted-foreground: 110 5% 65%;
+
+    --accent: 120 15% 28%;
+    --accent-foreground: 110 10% 92%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 120 15% 28%;
+    --input: 120 15% 28%;
+    --ring: 120 45% 50%;
+    
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+  
+  .text-gradient {
+    @apply bg-gradient-to-r from-green-600 to-green-400 bg-clip-text text-transparent;
+  }
+  
+  .bg-gradient-green {
+    @apply bg-gradient-to-br from-green-50 to-green-100;
+  }
+  
+  .container-custom {
+    @apply container px-4 sm:px-6 lg:px-8 mx-auto;
+  }
+}
