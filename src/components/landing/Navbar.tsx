@@ -13,11 +13,9 @@ const Navbar = () => {
         <nav className="hidden md:flex items-center space-x-8">
           <a href="#features" className="text-sm font-medium hover:text-green-600 transition-colors">Features</a>
           <a href="#how-it-works" className="text-sm font-medium hover:text-green-600 transition-colors">How It Works</a>
-          <a href="#pricing" className="text-sm font-medium hover:text-green-600 transition-colors">Pricing</a>
-          <a href="#testimonials" className="text-sm font-medium hover:text-green-600 transition-colors">Testimonials</a>
+
         </nav>
         <div className="flex items-center gap-4">
-          <Button variant="ghost" className="hidden sm:inline-flex">Log in</Button>
           <Button className="bg-green-600 hover:bg-green-700">Get Started</Button>
         </div>
       </div>

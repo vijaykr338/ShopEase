@@ -16,15 +16,14 @@ const HeroSection = () => {
               automating discounts, and notifying nearby customers about deals.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <Button size="lg" className="bg-green-600 hover:bg-green-700">
+            <Link to="/dashboard"><Button size="lg" className="bg-green-600 hover:bg-green-700">
                 
-                <Link to="/dashboard">Get Started</Link>
+                Get Started
                 
                 <ArrowRight className="ml-2 h-4 w-4" />
-              </Button>
-              <Button size="lg" variant="outline" className="border-green-600 text-green-600">
-                See How It Works
-              </Button>
+              </Button></Link>
+           
+            
             </div>
             <div className="flex items-center gap-4 text-sm pt-4">
               <div className="flex -space-x-2">
