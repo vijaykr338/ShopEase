@@ -4,6 +4,9 @@
 
 ShopEase is an intelligent inventory and customer management system built to help shopkeepers prevent losses caused by expired products, track expiry dates effectively, and attract local customers through smart discounting and notifications.
 
+![image](https://github.com/user-attachments/assets/e85a45d6-cfa5-4ccc-9bcc-208b3ba8cc23)
+
+
 ---
 
 ## 🚀 Features
